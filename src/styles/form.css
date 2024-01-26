@@ -9,7 +9,7 @@
 }
 .container_form > div{
   width: 100%;
-  
+ 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,6 +30,10 @@
   border-radius: 4px;
   outline: none;
   box-shadow: 0px 0px 3px red;  
+}
+.address_city{
+  display: flex;
+  flex-direction: row;
 }
 #cep:focus{
   min-width: 85px;
@@ -62,6 +66,62 @@
 #number{
   width: 42px;
 }
+.complement_text {
+  display: flex;
+}
 #complement{
   width: 100%;
+}
+
+@media only screen and (max-width: 325px) {
+  .container_form > div{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+  }
+  .address_city{
+    flex-direction: column;
+  }
+  .address_state{
+    flex-direction: column;
+  }
+  #logradouro_span{
+    min-width: 0;
+    width: 100%;
+  }
+  .complement_text{
+    flex-direction: column;
+  }
+  #city_span{
+    min-width: 0;
+  }
+  #state_span{
+    min-width: 0;
+  }
+  #logradouro_span{
+    min-width: 0;
+  }
+  #bairro_span{
+    min-width: 0;
+  }
+}
+
+@media only screen and (min-width: 326px) and (max-width: 599px) {
+  .container_form > div{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+  }
+  #logradouro_span{
+    min-width: 0;
+    width: 100%;
+  }
 }

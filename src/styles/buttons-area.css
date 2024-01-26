@@ -11,3 +11,9 @@
   width: 100%;
   max-width: 200px;
 }
+
+@media only screen and (max-width: 399px) {
+  .buttons_area{
+    flex-direction: column;
+  }
+}
