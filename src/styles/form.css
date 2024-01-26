@@ -1,0 +1,67 @@
+.container_form{
+  padding: 1.5vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+.container_form > div{
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+.container_form > div > div{
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .7vw;
+}
+#cep{
+  min-width: 85px;
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  box-shadow: 0px 0px 3px red;  
+}
+#cep:focus{
+  min-width: 85px;
+  width: 30%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+  border-color: #ccc;
+  box-shadow: 0px 0px 3px red; 
+}
+#number_box{
+  width: auto;
+}
+#city_span{
+  min-width: 145px;
+  width: 100%;
+}
+#state_span{
+  min-width: 200px;
+  width: 100%;
+}
+#logradouro_span{
+  min-width: 386px;
+  width: 100%;
+}
+#bairro_span{
+  min-width: 290px;
+  width: 100%;
+}
+#number{
+  width: 42px;
+}
+#complement{
+  width: 100%;
+}

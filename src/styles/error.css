@@ -1,0 +1,10 @@
+.error_message{
+  color: red;
+  text-shadow: 1px 1px 5px red;
+  font-size: larger;
+
+  display: none;
+
+  position: absolute;
+  bottom: -10%;
+}
