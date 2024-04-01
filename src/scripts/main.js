@@ -12,8 +12,8 @@ async function check() {
     if (state.cepInputed.length === 8) {
       state.result = await getApiData(state.cepInputed);
       if ("cep" in state.result) {
-        toggleDisabled(false)
-        setEntriesValues()
+        toggleDisabled(false);
+        setEntriesValues();
       } else {
         handleErrorMessage("Este CEP não foi encontrado");
         cleanCEP();
@@ -22,10 +22,18 @@ async function check() {
   }
 }
 
+
+export function openMailLink() {
+  window.open(state.baseUrl, '_blank')
+}
+
 function init () {
-  const cepInput = document.querySelector("#cep")
-  cepInput.addEventListener("input", (event) => getCEP(event.target))
-  cepInput.addEventListener("blur", () => check())
+  const cepInput = document.querySelector("#cep");
+  cepInput.addEventListener("input", (event) => getCEP(event.target));
+  cepInput.addEventListener("blur", () => check());
+
+  const linkButton = document.querySelector(".btn_mailLink");
+  linkButton.addEventListener("click", openMailLink())
 
 }
 
