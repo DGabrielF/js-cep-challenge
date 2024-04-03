@@ -27,10 +27,6 @@ function init () {
   const cepInput = document.querySelector("#cep");
   cepInput.addEventListener("input", (event) => getCEP(event.target));
   cepInput.addEventListener("blur", () => check());
-
-  const linkButton = document.querySelector(".btn_mailLink");
-  linkButton.addEventListener("click", openMailLink())
-
 }
 
 init()
