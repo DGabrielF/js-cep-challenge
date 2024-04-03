@@ -3,6 +3,7 @@ import { cleanCEP, getCEP, handleErrorMessage, setEntriesValues, toggleDisabled 
 
 export const state = {
   baseUrl: "https://viacep.com.br/ws/",
+  mailUrl: "",
   cepInputed: null,
   result: null,
 }
@@ -20,11 +21,6 @@ async function check() {
       }
     }
   }
-}
-
-
-export function openMailLink() {
-  window.open(state.baseUrl, '_blank')
 }
 
 function init () {
